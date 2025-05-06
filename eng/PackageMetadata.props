@@ -3,7 +3,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>$(Product)</Title>
 		<Authors>Lamparter</Authors>
-		<Copyright>Copyright (c) 2025 Lamparter</Copyright>
+		<Copyright>© Lamparter. All rights reserved.</Copyright>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/Lamparter/CompilerPlatform</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
