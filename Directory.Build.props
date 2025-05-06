@@ -1,0 +1,30 @@
+<Project>
+
+	<Import Project="$(MSBuildThisFileDirectory)\eng\PackageMetadata.props" />
+	<Import Project="$(MSBuildThisFileDirectory)\eng\CurrentVersion.props" />
+	<Import Project="$(MSBuildThisFileDirectory)\eng\AdditionalFiles.props" />
+
+	<PropertyGroup>
+		<RootDirectory>$(MSBuildThisFileDirectory)</RootDirectory>
+		<SourceDirectory>$(RootDirectory)\src</SourceDirectory>
+		<BuildDirectory>$(RootDirectory)\eng</BuildDirectory>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<LangVersion>12.0</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<Product>Hypervisor</Product>
+		
+		<CurrentYear>$([System.DateTime]::Now.ToString("yy"))</CurrentYear>
+		<CurrentMonth>$([System.DateTime]::Now.ToString("MM"))</CurrentMonth>
+		<CurrentDay>$([System.DateTime]::Now.ToString("dd"))</CurrentDay>
+		<BuildDate>$(CurrentYear)$(CurrentMonth)$(CurrentDay)</BuildDate>
+
+		<Version>$(MajorVersion).$(MinorVersion).$(BuildDate)</Version>
+	</PropertyGroup>
+
+</Project>
